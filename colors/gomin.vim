@@ -14,6 +14,7 @@ let g:colors_name = "gomin"
 " Note: 
 " 1) `hi` is shortname of `highlight` in vim.
 " 2) See more information `:help hi` in vim.
+" 3) See colors `:help cterm-colors`
 
 :hi	clear	ColorColumn		
 :hi	clear	Conceal			
@@ -61,28 +62,28 @@ let g:colors_name = "gomin"
 :hi	clear	WarningMsg		
 :hi	clear	WildMenu		
 
-:hi Normal		guifg=#424242	guibg=#FFFFD8
-:hi Comment 	guifg=#007D41
-:hi String		guifg=red
+:hi Normal			guifg=#424242	guibg=#FFFFD8
+:hi Comment 		guifg=#007D41
+:hi String			guifg=red
 
-" hi ErrorMsg
-" hi WarningMsg
-" hi ModeMsg
-" hi MoreMsg
-" hi Error		
+:hi ErrorMsg		guibg=Orange
+:hi WarningMsg		guibg=Orange
+:hi ModeMsg			guibg=Orange
+:hi MoreMsg			guibg=Orange
+:hi Error			guibg=Orange
 
-" hi Todo
-" hi Cursor
-" hi Search	
-" hi IncSearch
-" hi LineNr	
-" hi title	
+:hi Todo			guibg=Yellow
+:hi Cursor			guibg=Yellow
+:hi Search			guibg=Yellow
+:hi IncSearc		guibg=Yellow
+:hi LineNr			guibg=Yellow
+:hi title			guibg=Yellow
 
-" hi StatusLine 
-" hi StatusLineNC
-" hi VertSplit
+:hi StatusLine 		guibg=Grey
+:hi StatusLineNC	guibg=Grey
+:hi VertSplit		guibg=Grey
 
-" hi Visual
+:hi Visual			guibg=Lightgray
 
 " hi DiffChange
 " hi DiffText
@@ -92,3 +93,13 @@ let g:colors_name = "gomin"
 " hi Folded	
 " hi FoldColumn
 " hi cIf0		
+"
+
+
+" ==== Cursor color ====
+highlight  Cursor guifg=black guibg=Grey
+highlight iCursor guifg=white guibg=Red
+
+" ==== Yellow vertical borders ====
+:set fillchars+=stlnc:-,vert:\|
+:hi vertsplit  guibg=yellow ctermfg=8 guifg=black ctermbg=15
