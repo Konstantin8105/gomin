@@ -1,5 +1,7 @@
 # gomin
 
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]
+
 Minimal `golang` colorscheme for Vim only for GUI version.
 
 # INSTALL
