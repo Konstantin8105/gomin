@@ -62,17 +62,68 @@ let g:colors_name = "gomin"
 :hi	clear	WarningMsg		
 :hi	clear	WildMenu		
 
+" === see `:help syntax`
+:hi	clear	Comment			" * important
+           
+:hi	clear	Constant		" *	 important
+:hi	clear	String		
+:hi	clear	Character	
+:hi	clear	Number		
+:hi	clear	Boolean	
+:hi	clear	Float		
+
+:hi	clear	Identifier		" * important
+:hi	clear	Function	
+
+:hi	clear	Statement		" * important
+:hi	clear	Conditional	
+:hi	clear	Repeat		
+:hi	clear	Label		
+:hi	clear	Operator	
+:hi	clear	Keyword	
+:hi	clear	Exception	
+
+:hi	clear	PreProc			" * important
+:hi	clear	Include	
+:hi	clear	Define		
+:hi	clear	Macro		
+:hi	clear	PreCondit	
+
+:hi	clear	Type			" * important
+:hi	clear	StorageClass	
+:hi	clear	Structure	
+:hi	clear	Typedef	
+
+:hi	clear	Special			" * important
+:hi	clear	SpecialChar	
+:hi	clear	Tag		
+:hi	clear	Delimiter	
+:hi	clear	SpecialComment	
+:hi	clear	Debug		
+
+:hi	clear	Underlined		" * important
+
+:hi	clear	Ignore			" * important
+
+:hi	clear	Error			" * important
+
+:hi	clear	Todo			" * important
+
+" === Settings ===
 :hi Normal			guifg=#424242	guibg=#FFFFD8
 :hi Comment 		guifg=#007D41
-:hi String			guifg=red
+:hi Constant		guifg=Red
 
-:hi ErrorMsg		guibg=Orange
-:hi WarningMsg		guibg=Orange
-:hi ModeMsg			guibg=Orange
-:hi MoreMsg			guibg=Orange
-:hi Error			guibg=Orange
-
+" No need :hi	Identifier		guifg=White
+" No need :hi	Special			guifg=Blue
 :hi Todo			guibg=Yellow
+
+:hi ErrorMsg		guibg=Red
+:hi WarningMsg		guibg=Red
+:hi ModeMsg			guibg=Red
+:hi MoreMsg			guibg=Red
+:hi Error			guibg=Red
+
 :hi Cursor			guibg=Yellow
 :hi Search			guibg=Yellow
 :hi IncSearc		guibg=Yellow
@@ -100,9 +151,5 @@ let g:colors_name = "gomin"
 
 
 " ==== Cursor color ====
-highlight  Cursor guifg=black guibg=Grey
-highlight iCursor guifg=white guibg=Red
-
-" ==== Yellow vertical borders ====
-:set fillchars+=stlnc:-,vert:\|
-:hi vertsplit  guibg=yellow ctermfg=8 guifg=black ctermbg=15
+:hi	Cursor 		guifg=black		guibg=Grey
+:hi iCursor 	guifg=white		guibg=Red
