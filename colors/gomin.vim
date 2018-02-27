@@ -79,6 +79,9 @@ let g:colors_name = "gomin"
 :hi LineNr			guibg=Yellow
 :hi title			guibg=Yellow
 
+:hi	Pmenu			guibg=LightRed
+:hi	PmenuSel		guibg=LightGrey
+
 :hi StatusLine 		guibg=Grey
 :hi StatusLineNC	guibg=Grey
 :hi VertSplit		guibg=Grey
