@@ -109,26 +109,21 @@ let g:colors_name = "gomin"
 
 :hi	clear	Todo			" * important
 
-" === Settings ===
-:hi Normal			guifg=#424242	guibg=#FFFFD8
-:hi Comment 		guifg=#007D41
-:hi Constant		guifg=Red
+" === Settings 1 ===
 
-" No need :hi	Identifier		guifg=White
-" No need :hi	Special			guifg=Blue
-:hi Todo			guibg=Yellow
+:hi	ColorColumn		guibg=Red
+:hi Cursor			guibg=Yellow
+
+:hi Search			guibg=Yellow
+:hi IncSearc		guibg=Yellow
+:hi LineNr			guibg=Yellow
+:hi Title			guibg=Yellow
 
 :hi ErrorMsg		guibg=Red
 :hi WarningMsg		guibg=Red
 :hi ModeMsg			guibg=Red
 :hi MoreMsg			guibg=Red
 :hi Error			guibg=Red
-
-:hi Cursor			guibg=Yellow
-:hi Search			guibg=Yellow
-:hi IncSearc		guibg=Yellow
-:hi LineNr			guibg=Yellow
-:hi title			guibg=Yellow
 
 :hi	Pmenu			guibg=LightRed
 :hi	PmenuSel		guibg=LightGrey
@@ -139,15 +134,18 @@ let g:colors_name = "gomin"
 
 :hi Visual			guibg=Lightgray
 
-" hi DiffChange
-" hi DiffText
-" hi DiffAdd
-" hi DiffDelete
+" === Settings 2 ===
+:hi Normal			guifg=#424242	guibg=#FFFFD8
+:hi Comment 		guifg=#007D41
+:hi String			guifg=Red
+:hi Character		guifg=Red
 
-" hi Folded	
-" hi FoldColumn
-" hi cIf0		
-"
+:hi	Statement 		guifg=DarkRed
+:hi	Type			guifg=DarkRed
+
+" No need :hi	Identifier		guifg=White
+" No need :hi	Special			guifg=Blue
+:hi Todo			guibg=Yellow
 
 
 " ==== Cursor color ====
