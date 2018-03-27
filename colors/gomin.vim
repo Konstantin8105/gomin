@@ -140,6 +140,8 @@ let g:colors_name = "gomin"
 :hi String			guifg=Red
 :hi Character		guifg=Red
 
+:hi	MatchParen		guibg=Magenta
+
 :hi	Statement 		guifg=DarkRed
 :hi	Type			guifg=DarkRed
 
